@@ -1,0 +1,16 @@
+package com.myproject.transactionservices.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
+public class WebResponse<T> {
+    private String messages;
+    
+    private T data;
+}
